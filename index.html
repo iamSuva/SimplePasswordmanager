@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotePassword</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="logo">PassManager</div>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+          
+        </ul>
+
+    </nav>
+    <div class="container">
+        <h2> Your Password Manager</h2>
+        <p>Keep your your all password safe in your doc.This is made for saving your all password related confidentials. </p>
+        <h3>Your passwords</h3>
+        <span id="cpy_icon">Coppied successfully!!!</span>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr> 
+           
+        </table>
+        <h3>Add password</h3>
+        <form action="/submit" method="post">
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website" required>
+            <br><br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+      
+            <button class="btn" type="submit">Add New</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
